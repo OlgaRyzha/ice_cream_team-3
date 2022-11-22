@@ -1,5 +1,5 @@
 .gallery-wrap {
-  background-image: url('/images/gallery/bg_480.jpg');
+  background-image: url('/src/images/gallery/bg_480.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,25 +7,25 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  background-image: url('/images/gallery/bg_480_2x.jpg');
+  background-image: url('/src/images/gallery/bg_480_2x.jpg');
 }
   @media screen and (min-width: 768px) {
-    background-image: url('/images/gallery/bg_768.jpg');
+    background-image: url('/src/images/gallery/bg_768.jpg');
     @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  background-image: url('/images/gallery/bg_768_2x.jpg');
+  background-image: url('/src/images/gallery/bg_768_2x.jpg');
 }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url('/images/gallery/bg_1200.jpg');
+    background-image: url('/src/images/gallery/bg_1200.jpg');
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/images/gallery/bg_1200_2x.jpg');
+    background-image: url('/src/images/gallery/bg_1200_2x.jpg');
   }
   }
 }
