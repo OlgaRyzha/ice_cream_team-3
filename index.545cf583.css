@@ -1,0 +1,2 @@
+:root{--main-font:"Montserrat",sans-serif;--secondary-font:"Seymour One",sans-serif;--main-txt-cl:#fcfcfc;--accent-txt-cl:#131313;--bright-txt-cl:#f8d24e;--address-txt-color:#d6936d;--light-txt-color:#ababab;--accent-bg-cl: }body{font-family:var(--main-font);color:var(--main-txt-cl);font-size:16px;line-height:1.75}h1,h2,h3,h4,h5,h6,p{margin:0}ul{margin:0;padding:0;list-style:none}a{color:currentColor;text-decoration:none}img{max-width:100%;height:auto;display:block}.container{max-width:480px;margin:0 auto;padding:0 20px}
+/*# sourceMappingURL=index.545cf583.css.map */
