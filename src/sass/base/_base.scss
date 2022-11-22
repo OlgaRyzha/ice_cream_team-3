@@ -65,3 +65,14 @@ img {
   justify-content: center;
   color: var(--accent-txt-cl);
 }
+.btn-buy{
+  @extend .btn;
+  width: 152px;
+  color: var(--btn-txt-dark-color);
+  line-height: calc(17 / 14);
+}
+.btn-read{
+  @extend .btn-buy;
+  width: 164px;
+  line-height: calc(18 / 14);
+}

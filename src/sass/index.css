@@ -2,6 +2,7 @@
   /* Fonts */
   --main-font: "Montserrat", sans-serif;
   --secondary-font:"Seymour One", sans-serif;
+  --third-font:"Inter", sans-serif;
   /* Tetx colors */
   --main-txt-cl: #FCFCFC;
   --accent-txt-cl:#131313;
@@ -12,6 +13,7 @@
   --accent-bg-cl: #84A178;
   /* Btns */
   --btn-bg-color:#F8D24E;
+  --btn-txt-dark-color:#000;
 }
 
 body {
@@ -68,7 +70,7 @@ img {
   overflow: hidden;
 }
 
-.btn {
+.btn, .btn-buy, .btn-read {
   width: 114px;
   height: 42px;
   background: var(--btn-bg-color);
@@ -81,4 +83,15 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--accent-txt-cl);
+}
+
+.btn-buy, .btn-read {
+  width: 152px;
+  color: var(--btn-txt-dark-color);
+  line-height: 1.2142857143;
+}
+
+.btn-read {
+  width: 164px;
+  line-height: 1.2857142857;
 }/*# sourceMappingURL=index.css.map */
