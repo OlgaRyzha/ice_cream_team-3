@@ -49,6 +49,16 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -88,4 +98,57 @@ img {
 .btn-read {
   width: 164px;
   line-height: 1.2857142857;
+}
+
+.gallery-wrap {
+  background-image: url("/src/images/gallery/bg_480.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_480_2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_768.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_768_2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_1200_2x.jpg");
+  }
+}
+
+.gallery__img {
+  min-width: 280px;
+  min-height: 130px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__img {
+    min-width: 704px;
+    min-height: 180px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__img {
+    min-width: 1013px;
+    min-height: 422px;
+    margin-bottom: 140px;
+  }
 }/*# sourceMappingURL=index.css.map */
