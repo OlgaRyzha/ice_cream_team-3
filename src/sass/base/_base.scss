@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: var(--main-font);
@@ -6,20 +11,9 @@ body {
   color: var(--main-txt-cl);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -36,6 +30,12 @@ img {
   max-width: 480px;
   margin: 0 auto;
   padding: 0 20px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -55,7 +55,7 @@ img {
   width: 114px;
   height: 42px;
   background: var(--btn-bg-color);
-  border-radius: 10px;
+  border-radius: var(--main-br-rd);
   border: none;
   font-weight: 600;
   font-size: 12px;
