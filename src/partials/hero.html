@@ -1,0 +1,31 @@
+
+<section class="hero">
+    <div class="container baner">
+        <h1 class="hero__title">ice cream made with <span class="hero__uppercase">passion</span></h1>
+        <ul class="hero__list">
+            <li>
+                <a class="btn btn--transparent" href="">
+                    Products
+                </a>
+            </li>
+            <li><a href="">
+                    How it’s made?
+                </a></li>
+        </ul>
+    </div>
+    <picture>
+        <source srcset="
+                        ./images/hero/desk-hero.jpg    1x,
+                        ./images/hero/desk-hero-2x.jpg 2x
+                      " media="(min-width: 1200px)" />
+        <source srcset="
+                         ./images/hero/tablet-hero.jpg    1x,
+                        ./images/hero/tablet-hero-2x.jpg 2x
+                      " media="(min-width: 768px)" />
+        <source srcset="
+                        ./images/hero/mobile-hero.jpg    1x,
+                        ./images/hero/mobile-hero-2x.jpg 2x
+                      " media="(max-width: 767px)" />
+        <img class="" src="./images/hero/mobile-hero.jpg" alt="ice" />
+    </picture>
+</section>
