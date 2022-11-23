@@ -1,0 +1,35 @@
+
+// .contacts__container {
+//     display: flex;
+// }
+.contacts__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+
+}
+.contacts__item {
+    width: 100%;
+}
+.contacts__heading {
+    width: 80px;
+    height: 22px;
+    background-color: #F8D24E;
+    border-radius: 4px;
+    color: var(--accent-txt-cl);
+    text-transform: uppercase;
+}
+.contact__city {
+    color: var(--accent-txt-cl);
+}
+.schedule__day {
+    color: var(--accent-txt-cl);
+}
+.contact__location{
+    color:var(--address-txt-color);
+}
+.schedule__time {
+    color:var(--light-txt-color);
+}
