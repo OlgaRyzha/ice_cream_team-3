@@ -116,9 +116,19 @@ img {
     background-image: url("/src/images/gallery/bg_768.jpg");
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_768_2x.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .gallery-wrap {
     background-image: url("/src/images/gallery/bg_1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_1200_2x.jpg");
   }
 }
 
