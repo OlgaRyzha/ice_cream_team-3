@@ -14,6 +14,7 @@
   /* Btns */
   --btn-bg-color:#F8D24E;
   --btn-txt-dark-color:#000;
+  --main-br-rd: 10px;
 }
 
 * {
@@ -49,6 +50,16 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -68,7 +79,7 @@ img {
   width: 114px;
   height: 42px;
   background: var(--btn-bg-color);
-  border-radius: 10px;
+  border-radius: var(--main-br-rd);
   border: none;
   font-weight: 600;
   font-size: 12px;
@@ -88,4 +99,144 @@ img {
 .btn-read {
   width: 164px;
   line-height: 1.2857142857;
+}
+
+.gallery-wrap {
+  background-image: url("/src/images/gallery/bg_480.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_480_2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_768.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_768_2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery-wrap {
+    background-image: url("/src/images/gallery/bg_1200_2x.jpg");
+  }
+}
+
+.gallery__img {
+  min-width: 280px;
+  min-height: 130px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__img {
+    min-width: 704px;
+    min-height: 180px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__img {
+    min-width: 1013px;
+    min-height: 422px;
+    margin-bottom: 140px;
+  }
+}
+
+.customer_reviews__img {
+  min-width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.customer_reviews__reviews {
+  margin: 0 auto;
+  min-width: 280px;
+  background-color: var(--accent-bg-cl);
+  border-radius: var(--main-br-rd);
+  margin-bottom: 32px;
+}
+
+.review {
+  font-size: 12px;
+  line-height: 2.5833333333;
+  text-align: center;
+  padding: 35px 39px;
+}
+@media screen and (min-width: 768px) {
+  .review {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8571428571;
+    letter-spacing: 0.04em;
+    padding: 28px 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .review {
+    padding: 42px 74px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.customer_reviews__customer {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: center;
+  color: var(--accent-txt-cl);
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .customer_reviews__customer {
+    font-size: 16px;
+    line-height: 1.875;
+    margin-bottom: 32px;
+  }
+}
+
+.customer_reviews__list {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding-bottom: 393px;
+}
+
+.customer_reviews__item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+.customer_reviews__item:hover {
+  background-color: var(--accent-bg-cl);
+}
+
+.franchise_modal {
+  width: 100%;
+  min-width: 280px;
+  height: 100%;
+  background-color: #FCFCFC;
+  border-radius: var(--main-br-rd);
+  padding: 28px;
+}
+
+.franchise-modal__title {
+  line-height: 1.5;
+  text-align: center;
+  color: var(--accent-txt-cl);
 }/*# sourceMappingURL=index.css.map */
