@@ -3,7 +3,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/images/gallery/bg_480_2x.jpg');
+  }
   @media screen and (min-width: 768px) {
     background-image: url('/src/images/gallery/bg_768.jpg');
   }
