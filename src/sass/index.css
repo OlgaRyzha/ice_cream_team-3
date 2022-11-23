@@ -14,6 +14,7 @@
   /* Btns */
   --btn-bg-color:#F8D24E;
   --btn-txt-dark-color:#000;
+  --main-br-rd: 10px;
 }
 
 * {
@@ -78,7 +79,7 @@ img {
   width: 114px;
   height: 42px;
   background: var(--btn-bg-color);
-  border-radius: 10px;
+  border-radius: var(--main-br-rd);
   border: none;
   font-weight: 600;
   font-size: 12px;
@@ -165,7 +166,7 @@ img {
   margin: 0 auto;
   min-width: 280px;
   background-color: var(--accent-bg-cl);
-  border-radius: 10px;
+  border-radius: var(--main-br-rd);
   margin-bottom: 32px;
 }
 
@@ -223,4 +224,19 @@ img {
 }
 .customer_reviews__item:hover {
   background-color: var(--accent-bg-cl);
+}
+
+.franchise_modal {
+  width: 100%;
+  min-width: 280px;
+  height: 100%;
+  background-color: #FCFCFC;
+  border-radius: var(--main-br-rd);
+  padding: 28px;
+}
+
+.franchise-modal__title {
+  line-height: 1.5;
+  text-align: center;
+  color: var(--accent-txt-cl);
 }/*# sourceMappingURL=index.css.map */
