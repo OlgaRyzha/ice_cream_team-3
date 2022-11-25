@@ -63,7 +63,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-txt-cl);
+  fill: var(--accent-txt-cl);
   &:hover{
     background-color: var( --btn-bg-hv-color);
   }

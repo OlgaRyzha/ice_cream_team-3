@@ -88,7 +88,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-txt-cl);
+  fill: var(--accent-txt-cl);
 }
 .btn:hover, .btn-buy:hover, .btn-read:hover {
   background-color: var(--btn-bg-hv-color);
