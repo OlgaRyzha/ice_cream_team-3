@@ -38,6 +38,7 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  cursor: url(/src/images/icon.svg/cursor.svg), auto;
 }
 
 img {
