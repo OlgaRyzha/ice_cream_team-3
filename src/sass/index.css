@@ -370,9 +370,9 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__img {
     left: 72%;
-    bottom: -155px;
-    width: 482px;
-    height: 590px;
+    bottom: -179px;
+    width: 600px;
+    height: 770px;
   }
 }
 
@@ -1096,6 +1096,16 @@ img {
   justify-content: center;
   gap: 18px;
   padding-bottom: 393px;
+}
+@media screen and (min-width: 768px) {
+  .customer_reviews__list {
+    padding-bottom: 379px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer_reviews__list {
+    padding-bottom: 228px;
+  }
 }
 
 .customer_reviews__item {
