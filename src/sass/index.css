@@ -892,6 +892,7 @@ img {
 .contacts__btn-icon {
   display: block;
   margin-left: 7px;
+  color: currentColor;
 }
 
 .franchise-modal {
