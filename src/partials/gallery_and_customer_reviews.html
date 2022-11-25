@@ -1,36 +1,58 @@
 <div class="gallery-wrap">
   <section class="section gallery">
     <h2 class="visually-hidden">Gallery</h2>
-    <div class="container">
+    <div class="container slider single-item">
       <picture>
-        <source srcset="/src/images/gallery/ice_creams_1200.jpg 1x, /src//images/gallery/ice_creams_1200_2x.jpg 2x"
-          media="(min-width: 1200px)" />
-        <source srcset="/src/images/gallery/ice_creams_768.jpg 1x, /src/images/gallery/ice_creams_768_2x.jpg 2x"
-          media="(min-width: 768px)" />
-        <source srcset="/src/images/gallery/ice_creams_480.jpg 1x, /src/images/gallery/ice_creams_480_2x.jpg 2x"
-          media="(max-width: 767px)" />
+        <source srcset="/src/images/gallery/ice_creams_1200.jpg 1x, /src/images/gallery/ice_creams_1200_2x.jpg 2x" media="(min-width: 1200px)"/>
+        <source srcset="/src/images/gallery/ice_creams_768.jpg 1x, /src/images/gallery/ice_creams_768_2x.jpg 2x" media="(min-width: 768px)"/>  
+        <source srcset="/src/images/gallery/ice_creams_480.jpg 1x, /src/images/gallery/ice_creams_480_2x.jpg 2x" media="(max-width: 767px)"/>             
         <img class="gallery__img" src="/src/images/gallery/ice_creams_480.jpg" alt="ice_creams" />
+      </picture>
+      <picture>
+        <img class="gallery__img" src="/src/images/gallery/courtney-cook.jpg" alt="ice_creams" />
+      </picture>
+      <picture>
+        <img class="gallery__img" src="/src/images/gallery/unsplash.jpg" alt="ice_creams" />
       </picture>
     </div>
   </section>
   <section class="section customer_reviews">
     <h2 class="visually-hidden">Customer_reviews</h2>
-    <div class="container">
+    <div class="container slider single-item">
+  
+      <div class="customer_reviews__wrap">
       <picture>
-        <source srcset="/src/images/customer_reviews/woman.jpg 1x, /src/images/customer_reviews/woman_2x.jpg 2x" />
+        <source srcset="/src/images/customer_reviews/woman.jpg 1x, /src/images/customer_reviews/woman_2x.jpg 2x"/>             
         <img class="customer_reviews__img" src="/src/images/customer_reviews/woman.jpg" alt="woman" />
       </picture>
-      <div class="customer_reviews__reviews">
-        <p class="review">I love visiting your cafe.
-          You prepare the most delicious ice cream in Los Angeles!
-          In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
-      </div>
-      <p class="customer_reviews__customer">Emily, Los Angeles</p>
-      <ul class="customer_reviews__list">
-        <li class="customer_reviews__item"><a href="#" class="customer_reviews__link"></a></li>
-        <li class="customer_reviews__item"><a href="#" class="customer_reviews__link"></a></li>
-        <li class="customer_reviews__item"><a href="#" class="customer_reviews__link"></a></li>
-      </ul>
+    <div class="customer_reviews__reviews">
+      <p class="review">I love visiting your cafe.
+        You prepare the most delicious ice cream in Los Angeles! 
+       In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
     </div>
+    <p class="customer_reviews__customer">Emily, Los Angeles</p>
+  </div>
+  <div class="customer_reviews__wrap">
+      <picture>
+        <source srcset="/src/images/customer_reviews/man.jpg 1x, /src/images/customer_reviews/man_2x.jpg 2x"/>             
+        <img class="customer_reviews__img" src="/src/images/customer_reviews/man.jpg" alt="man" />
+      </picture>
+    <div class="customer_reviews__reviews">
+      <p class="review">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
+    </div>
+    <p class="customer_reviews__customer">Bryan, New-York</p>
+  </div>
+    <div class="customer_reviews__wrap">
+      <picture>
+        <source srcset="/src/images/customer_reviews/girl.jpg 1x, /src/images/customer_reviews/girl_2x.jpg 2x"/>             
+        <img class="customer_reviews__img" src="/src/images/customer_reviews/girl.jpg" alt="girl" />
+      </picture>
+    <div class="customer_reviews__reviews">
+      <p class="review">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly! </p>
+    </div>
+    <p class="customer_reviews__customer">Diana, Chicago</p>
+  </div>
+  </div>
+
   </section>
 </div>
