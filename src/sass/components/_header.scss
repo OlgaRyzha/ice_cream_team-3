@@ -1,14 +1,11 @@
-.header{
-  
+.chain{
   background-color: var(--accent-bg-cl);
 }
+
 .header__container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 1200px) {
-    // align-items: flex-end;
-    }
 }
 .header__logo{
   padding-top: 12px;
