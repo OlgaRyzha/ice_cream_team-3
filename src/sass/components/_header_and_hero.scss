@@ -22,6 +22,8 @@
 padding-top: 40px;
 }
 .nav__item{
+  position: relative;
+  z-index: 5;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
