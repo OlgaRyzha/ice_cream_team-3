@@ -88,7 +88,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }
 .btn:hover, .btn-buy:hover, .btn-read:hover {
   background-color: var(--btn-bg-hv-color);
@@ -587,7 +587,7 @@ img {
 
 .about-icon {
   margin-left: 4px;
-  fill: inherit;
+  color: currentColor;
 }
 
 .gallery-wrap {
@@ -893,7 +893,7 @@ img {
 .contacts__btn-icon {
   display: block;
   margin-left: 7px;
-  fill: inherit;
+  color: currentColor;
 }
 
 .franchise-modal {
