@@ -971,6 +971,16 @@ img {
   gap: 18px;
   padding-bottom: 393px;
 }
+@media screen and (min-width: 768px) {
+  .customer_reviews__list {
+    padding-bottom: 379px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer_reviews__list {
+    padding-bottom: 228px;
+  }
+}
 
 .customer_reviews__item {
   width: 12px;
