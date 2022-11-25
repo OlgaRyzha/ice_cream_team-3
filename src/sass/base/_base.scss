@@ -26,13 +26,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .container {
   max-width: 480px;
   margin: 0 auto;
   padding: 0 20px;
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
@@ -64,20 +67,24 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--accent-txt-cl);
-  &:hover{
-    background-color: var( --btn-bg-hv-color);
+
+  &:hover {
+    background-color: var(--btn-bg-hv-color);
   }
-  &:focus{
-   color:#fff;
+
+  &:focus {
+    color: #fff;
   }
 }
-.btn-buy{
+
+.btn-buy {
   @extend .btn;
   width: 152px;
   color: var(--btn-txt-dark-color);
   line-height: calc(17 / 14);
 }
-.btn-read{
+
+.btn-read {
   @extend .btn-buy;
   width: 164px;
   line-height: calc(18 / 14);

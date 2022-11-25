@@ -1,0 +1,39 @@
+.header {
+  background-color: var(--accent-bg-cl);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  padding-top: 12px;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-top: 24px;
+}
+
+.header__icon {
+  fill: #fff;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.header__btn {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {}
+}
+
