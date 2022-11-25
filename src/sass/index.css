@@ -587,7 +587,7 @@ img {
 
 .about-icon {
   margin-left: 4px;
-  color: currentColor;
+  fill: inherit;
 }
 
 .gallery-wrap {
@@ -893,7 +893,7 @@ img {
 .contacts__btn-icon {
   display: block;
   margin-left: 7px;
-  color: currentColor;
+  fill: inherit;
 }
 
 .franchise-modal {
