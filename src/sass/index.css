@@ -857,6 +857,132 @@ img {
   color: currentColor;
 }
 
+.advantages {
+  background-color: var(--accent-bg-cl);
+  margin-top: -18px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    margin-top: -7px;
+    padding-bottom: 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    margin-top: -1px;
+    padding-bottom: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    gap: 32px;
+  }
+}
+
+.advantages__subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__subtitle {
+    font-size: 48px;
+    line-height: 1.23;
+    margin-bottom: 16px;
+    font-family: var(--main-font);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__subtitle {
+    font-size: 58px;
+    line-height: 1.22;
+  }
+}
+
+.cow::before {
+  content: url("../images/sd-img/cow.png");
+  display: block;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .cow::before {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cow::before {
+    margin-bottom: 40px;
+  }
+}
+
+.weight::before {
+  content: url("../images/sd-img/weight.png");
+  display: block;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .weight::before {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .weight::before {
+    margin-bottom: 40px;
+  }
+}
+
+.ice-cream::before {
+  content: url("../images/sd-img/ice-crema.png");
+  display: block;
+  margin-bottom: 22px;
+}
+@media screen and (min-width: 768px) {
+  .ice-cream::before {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ice-cream::before {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__text {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}
+
 .gallery-wrap {
   background-image: url("/src/images/gallery/bg_480.jpg");
   background-size: cover;
