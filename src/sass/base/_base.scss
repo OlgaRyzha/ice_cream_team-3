@@ -64,6 +64,12 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--accent-txt-cl);
+  &:hover{
+    background-color: var( --btn-bg-hv-color);
+  }
+  &:focus{
+   color:#fff;
+  }
 }
 .btn-buy{
   @extend .btn;
