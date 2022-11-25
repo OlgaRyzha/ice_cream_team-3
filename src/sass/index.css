@@ -370,7 +370,9 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__img {
     left: 72%;
-    bottom: -178px;
+    bottom: -155px;
+    width: 482px;
+    height: 590px;
   }
 }
 
