@@ -587,6 +587,7 @@ img {
 
 .about-icon {
   margin-left: 4px;
+  color: currentColor;
 }
 
 .gallery-wrap {
