@@ -1296,17 +1296,17 @@ img {
 
 .read-more-backdrop {
   width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  border: 2px solid #f8d24e;
-  padding: 28px;
-  position: relative;
-}
-@media screen and (min-width: 768px) {
-  .read-more-backdrop {
-    padding: 32px 60px;
-    max-width: 568px;
-  }
+  height: 100%;
+  position: fixed;
+  transform: translateX(0);
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+  transition-property: visibility, opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .is-hidden {
@@ -1314,6 +1314,25 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.read-more-modal {
+  background-color: var(--main-txt-cl);
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+  padding: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  .read-more-modal {
+    padding: 32px 60px;
+    max-width: 568px;
+  }
 }
 
 .read-more-title {
