@@ -128,7 +128,7 @@ width: 224px;
     letter-spacing: 0.04;
 }
 .contacts__btn-loc{ 
-    width: 196px;
+  width: 196px;
   height: 42px;
   background: var(--btn-bg-color);
   border-radius: var(--main-br-rd);
@@ -160,4 +160,5 @@ width: 224px;
 .contacts__btn-icon {
     display: block;
     margin-left: 7px;
+    color: currentColor;
 }
