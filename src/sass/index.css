@@ -186,7 +186,7 @@ img {
 }
 .hero {
   background-color: var(--accent-bg-cl);
-  background-image: url("/images/hero/mobile-hero-dots.png");
+  background-image: url("/src/images/hero/mobile-hero-dots.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: auto;
@@ -194,13 +194,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("/images/hero/tablet-dots.png");
+    background-image: url("/src/images/hero/tablet-dots.png");
     height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("/images/hero/desk-dots.png");
+    background-image: url("/src/images/hero/desk-dots.png");
     height: 598px;
   }
 }
@@ -231,6 +231,7 @@ img {
   text-transform: uppercase;
   width: 247px;
 }
+
 .hero__counts {
   display: none;
 }
@@ -292,11 +293,13 @@ img {
   border-radius: 8px;
   color: var(--btn-txt-dark-color);
 }
+
 .hero__link {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--btn-bg-color);
 }
+
 .tablet-plate {
   display: none;
 }
