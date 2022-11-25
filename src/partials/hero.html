@@ -1,31 +1,60 @@
 
 <section class="hero">
-    <div class="container baner">
+    <div class="container hero-content">
         <h1 class="hero__title">ice cream made with <span class="hero__uppercase">passion</span></h1>
         <ul class="hero__list">
-            <li>
-                <a class="btn btn--transparent" href="">
+            <li class="hero__item">
+                <a class="btn btn--small" href="">
                     Products
                 </a>
             </li>
-            <li><a href="">
+            <li class="hero__item">
+                <a class="btn-anchor" href="">
                     How it’s made?
-                </a></li>
+                </a>
+            </li>
         </ul>
+        <div class="hero-text">
+            <p class="hero-text__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et</p>
+            <a href="" class="hero-text__link">
+                <svg class="hero-text__icon" width="40" height="16">
+                    <use href="./images/hero/icons.svg#icon-arrow"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-benefits">
+            <ul class="hero-benefits__list">
+                <li class="hero-benefits__item">
+                    <p class="hero-benefits__numbers">16</p>
+                    <p class="hero-benefits__text">cafes</p>
+                </li>
+                <li class="hero-benefits__item">
+                    <p class="hero-benefits__numbers">23</p>
+                    <p class="hero-benefits__text">food trucks</p>
+                </li>
+            </ul>
+        </div>
+        <div class="hero__icecreams">
+            <img class="hero__icecream" srcset="./images/hero/desk-hero.png 456w, ./images/hero/desk-hero-2x.png 912w, 
+                ./images/hero/tablet-hero.png 268w, ./images/hero/tablet-hero-2x.png 536w,
+                ./images/hero/mobile-hero.png 176w, ./images/hero/mobile-hero-2x.png 352w"
+                sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 320px) 176px, 100vw"
+                src="./images/hero/mobile-hero.png" alt="icecream" />
+        </div>
+        <div class="hero__blurs">
+            <img class="hero__blur" srcset="./images/hero/desk-blur.png 477w,  
+                        ./images/hero/tablet-blur.png 266w,
+                        ./images/hero/mobile-blur.png 182w"
+                sizes="(min-width: 1200px) 477px, (min-width: 768px) 266px, (min-width: 320px) 182px, 100vw"
+                src="./images/hero/mobile-blur.png" alt="blur" />
+        </div>
+        <div class="hero__plates">
+            <img class="hero__plate" srcset="./images/hero/desk-plate.png 225w, ./images/hero/desk-plate-2x.png 450w, 
+                ./images/hero/tablet-plate.png 152w, ./images/hero/tablet-plate-2x.png 304w"
+                sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px" src="./images/hero/tablet-plate.png"
+                alt="plate" />
+        </div>
+
     </div>
-    <picture>
-        <source srcset="
-                        ./images/hero/desk-hero.jpg    1x,
-                        ./images/hero/desk-hero-2x.jpg 2x
-                      " media="(min-width: 1200px)" />
-        <source srcset="
-                         ./images/hero/tablet-hero.jpg    1x,
-                        ./images/hero/tablet-hero-2x.jpg 2x
-                      " media="(min-width: 768px)" />
-        <source srcset="
-                        ./images/hero/mobile-hero.jpg    1x,
-                        ./images/hero/mobile-hero-2x.jpg 2x
-                      " media="(max-width: 767px)" />
-        <img class="" src="./images/hero/mobile-hero.jpg" alt="ice" />
-    </picture>
 </section>

@@ -1,55 +1,41 @@
-.hero {
-    max-width: 1200px;
-        height: auto;
-    background-color: #84A178;
+.hero-content {
+    background-position: bottom;
+    background-size: contain;
     background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-      
-            background-image:
-            url('../images/hero/mobile-hero-dots.png');
-    
+    background-image:
+        url('../images/hero/mobile-hero-dots.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url('../images/hero/mobile-hero-dots-2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image:
+            url('../images/hero/tablet-dots.png');
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-       
             background-image:
-                url('../images/hero/mobile-hero-dots-2x.png');
+                url('../images/hero/tablet-dots-2x.png');
         }
-    
-        @media screen and (min-width: 480px) and (max-width: 767px) {
-      
-            background-image:
-                url('../images/hero/tablet-dots.png');
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-           
-                background-image:
-                    url('../images/hero/tablet-dots-2x.png');
-            }
-        }
-    
-        @media screen and (min-width: 768px) {
-        
-            background-image:
-                    url('../images/hero/desk-hero.jpg');
-                background-image:
-                    url('../images/hero/desk-dots.png');
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image:
-                        url('../images/hero/desk-hero-2x.jpg');
-                    background-image:
-                        url('../images/hero/desk-dots-2x.png');
-            }
-        }
-}
+    }
 
+    @media screen and (min-width: 1200px) {
+        background-image:
+            url('../images/hero/desk-dots.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url('../images/hero/desk-dots-2x.png');
+        }
+    }
+}
 
 .hero__title {
     font-family:'Montserrat', sans-serif;
@@ -73,23 +59,4 @@
     display: flex;
     align-items: center;
     gap: 12px;
-   
-
-}
-.baner {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 20px;
-    height: 502px;
-
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-        height: 415px;
-
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-        height: 664px;
-    }
 }
