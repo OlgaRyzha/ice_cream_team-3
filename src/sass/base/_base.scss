@@ -19,7 +19,7 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
-  cursor: url(/src/images/icon.svg/cursor.svg), auto;
+  cursor: url('/src/images/icon.svg/cursor.svg'), auto;
 }
 
 img {
@@ -68,7 +68,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--accent-txt-cl);
-  cursor: url(/src/images/icon.svg/cursor.svg), auto;
+  cursor: url('/src/images/icon.svg/cursor.svg'), auto;
 
   &:hover {
     background-color: var(--btn-bg-hv-color);
