@@ -1,13 +1,28 @@
 .section.contacts {
-  background-color: var(--accent-bg-cl);
-  padding: 0 15px;
+  background-image: linear-gradient(
+        transparent 373px,
+        var(--accent-bg-cl) 373px
+      );
+  padding: 20px 15px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        transparent 340px,
+        var(--accent-bg-cl) 340px
+      );
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        transparent 178px,
+        var(--accent-bg-cl) 178px
+      );
+  }
 }
 .contacts__container {
   display: flex;
   align-items: center;
   position: relative;
   flex-direction: column;
-  padding-top: 1034px;
+  
 }
 .contacts__wrap {
   display: flex;
@@ -16,17 +31,14 @@
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  position: absolute;
-  top: -353px;
+  
   //tablet
   @media screen and (min-width: 768px) {
-    top: -298px;
     margin-bottom: 40px;
   }
   //descktop
   @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
-    top: -128px;
   }
 }
 .contacts__item {
@@ -39,10 +51,12 @@
   border-radius: 24px;
   padding: 40px 32px 24px 32px;
   @media screen and (min-width: 768px) {
+    width: 224px;
     padding: 40px 24px 32px 24px;
   }
   @media screen and (min-width: 1200px) {
     padding: 40px 40px 32px 40px;
+    width: 368px;
   }
 }
 .contacts__heading {
@@ -210,6 +224,19 @@
     line-height: calc(29 / 16);
   }
 }
+.contacts__btn-list{
+    display: flex;
+    flex-direction: column;
+   gap:16px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 16px;
+      }
+      @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 16px;
+      }
+}
 .contacts__btn-loc {
   width: 196px;
   height: 42px;
@@ -223,7 +250,7 @@
   align-items: center;
   justify-content: center;
   color: var(--accent-txt-cl);
-  margin-bottom: 16px;
+ 
 }
 .contacts__btn-franchise {
   width: 196px;
