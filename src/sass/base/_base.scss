@@ -23,7 +23,7 @@ body::before {
   right: 0;
   // opacity: 0.5;
   // filter:blur(1);
-  background-size: auto;
+  background-size:contain;
   background-repeat:repeat-y;
   background-image:  url('/src/images/products/ice-cream-bg-mob.png');
   @media (min-device-pixel-ratio: 2),
