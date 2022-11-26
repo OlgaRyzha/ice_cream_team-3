@@ -169,7 +169,12 @@ padding-top: 40px;
 .hero__link {
   text-decoration-line: underline;
   color: var(--btn-bg-color);
-
+  &:hover{
+   color:  rgba(10, 136, 23, 1);
+  }
+   &:focus{
+  color: var(--main-txt-cl);
+  }
 }
 
   .tablet-plate {

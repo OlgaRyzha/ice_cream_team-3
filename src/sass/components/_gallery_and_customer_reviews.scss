@@ -1,9 +1,21 @@
 .gallery-wrap {
   position: relative;
-  background-image: url('/src/images/gallery/bg_480.jpg');
+  z-index: 6;
+}
+.gallery-wrap::before {
+  content:"";
+  opacity: 0.7;
+  filter:blur(1);
+  background-position: bottom;
+  position: absolute;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-image:  url('/src/images/gallery/bg_480.jpg');
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -30,7 +42,6 @@
   }
   }
 }
-
 .gallery {
   position: absolute;
   top: -32px;
@@ -47,7 +58,6 @@
   min-width: 280px;
   min-height: 130px;
   margin: 0 auto;
-  margin-bottom: 80px;
   @media screen and (min-width: 768px) {
     min-width: 704px;
     min-height: 180px;
@@ -59,13 +69,18 @@
     margin-bottom: 140px;
   }
 }
+
+
 .customer_reviews{
   padding-top: 178px;
+  padding-bottom: 40px;
   @media screen and (min-width: 768px) {
     padding-top: 283px;
+    padding-bottom: 80px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 464px;
+    padding-bottom: 100px;
   }
 }
 .customer_reviews__img {
