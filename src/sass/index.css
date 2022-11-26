@@ -33,7 +33,7 @@ body {
   color: var(--main-txt-cl);
 }
 
-.gallery-wrap::before {
+body::before {
   content: "";
   background-position: center;
   position: absolute;
@@ -47,27 +47,27 @@ body {
   background-image: url("/src/images/products/ice-cream-bg-mob.png");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .gallery-wrap::before {
+  body::before {
     background-image: url("/src/images/products/ice-cream-bg-mob@2x.png");
   }
 }
 @media screen and (min-width: 768px) {
-  .gallery-wrap::before {
+  body::before {
     background-image: url("/src/images/products/ice-cream-bg-tab.png");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .gallery-wrap::before {
+  body::before {
     background-image: url("/src/images/products/ice-cream-bg-tab@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
-  .gallery-wrap::before {
+  body::before {
     background-image: url("/src/images/products/ice-cream-bg-desk.png");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .gallery-wrap::before {
+  body::before {
     background-image: url("/src/images/products/ice-cream-bg-desk@2x.png");
   }
 }

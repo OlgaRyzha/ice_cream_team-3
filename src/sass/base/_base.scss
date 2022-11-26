@@ -12,7 +12,7 @@ body {
   line-height: calc(28 / 16);
   color: var(--main-txt-cl);
 }
-.gallery-wrap::before {
+body::before {
   content:"";
   background-position: center;
   position: absolute;
