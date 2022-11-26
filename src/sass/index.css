@@ -332,35 +332,6 @@ img {
   color: var(--accent-txt-cl);
   padding-top: 60px;
   padding-bottom: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/products/ice-cream-bg-mob.png);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products {
-    background-image: url(../images/products/ice-cream-bg-mob@2x.png);
-  }
-}
-@media screen and (min-width: 768px) {
-  .products {
-    background-image: url(../images/products/ice-cream-bg-tab.png);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .products {
-    background-image: url(../images/products/ice-cream-bg-tab@2x.png);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .products {
-    background-image: url(../images/products/ice-cream-bg-desk.png);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .products {
-    background-image: url(../images/products/ice-cream-bg-desk@2x.png);
-  }
 }
 
 .products-label {
@@ -1568,10 +1539,17 @@ img {
   font-weight: 700;
   color: #131313;
   text-align: right;
+  font-size: 12px;
+}
+@media screen and (min-width: 767px) {
+  .footer__tel-text {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__tel-text {
     letter-spacing: 0.02em;
+    font-size: 16px;
   }
 }
 
