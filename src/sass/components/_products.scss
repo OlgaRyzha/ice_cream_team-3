@@ -274,4 +274,11 @@
   outline: none;
   border: none;
   background: transparent;
+  cursor: url('/src/images/icon.svg/cursor.svg'), auto;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--main-txt-cl);
+  }
 }
