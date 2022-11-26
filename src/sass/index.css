@@ -141,8 +141,6 @@ img {
 }
 
 .nav__item {
-  position: relative;
-  z-index: 5;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -187,6 +185,7 @@ img {
     display: block;
   }
 }
+
 .hero {
   background-image: url("/src/images/hero/mobile-hero-dots.png");
   background-position: bottom;
@@ -296,6 +295,14 @@ img {
   color: var(--btn-txt-dark-color);
 }
 
+.hero__button:hover .hero__btn {
+  border: 2px solid rgb(10, 136, 23);
+}
+
+.hero__button:focus .hero__btn {
+  color: var(--main-txt-cl);
+}
+
 .hero__link {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -372,9 +379,10 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__img {
     left: 72%;
-    bottom: -179px;
-    width: 600px;
-    height: 770px;
+    width: 456px;
+    height: 560px;
+    bottom: -78px;
+    filter: drop-shadow(4px -4px 39px #fff);
   }
 }
 
@@ -986,6 +994,7 @@ img {
 }
 
 .gallery-wrap {
+  position: relative;
   background-image: url("/src/images/gallery/bg_480.jpg");
   background-size: cover;
   background-position: center;
@@ -1017,6 +1026,23 @@ img {
   }
 }
 
+.gallery {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    top: -144px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    top: -100px;
+  }
+}
+
 .gallery__img {
   min-width: 280px;
   min-height: 130px;
@@ -1035,6 +1061,20 @@ img {
     min-width: 1013px;
     min-height: 422px;
     margin-bottom: 140px;
+  }
+}
+
+.customer_reviews {
+  padding-top: 178px;
+}
+@media screen and (min-width: 768px) {
+  .customer_reviews {
+    padding-top: 283px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer_reviews {
+    padding-top: 464px;
   }
 }
 
@@ -1084,29 +1124,13 @@ img {
   text-align: center;
   color: var(--accent-txt-cl);
   margin-bottom: 12px;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .customer_reviews__customer {
     font-size: 16px;
     line-height: 1.875;
     margin-bottom: 32px;
-  }
-}
-
-.customer_reviews__list {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  padding-bottom: 393px;
-}
-@media screen and (min-width: 768px) {
-  .customer_reviews__list {
-    padding-bottom: 379px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .customer_reviews__list {
-    padding-bottom: 228px;
   }
 }
 
