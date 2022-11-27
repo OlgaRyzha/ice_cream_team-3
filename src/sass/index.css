@@ -142,8 +142,6 @@ img {
 
 .header, .hero {
   background-color: var(--accent-bg-cl);
-  border: none;
-  outline: none;
 }
 
 .header__container {

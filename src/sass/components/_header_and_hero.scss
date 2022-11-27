@@ -1,7 +1,6 @@
+
 .header, .hero{
   background-color: var(--accent-bg-cl);
-  border: none;
-outline: none;
 }
 
 .header__container{
@@ -52,6 +51,7 @@ padding-top: 40px;
 }
 .header__btn{
   display: none;
+ 
   @media screen and (min-width: 768px) {
   display: block;
   }
