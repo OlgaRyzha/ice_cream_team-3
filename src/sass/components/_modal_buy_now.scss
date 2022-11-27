@@ -59,7 +59,7 @@
 
     color: #131313;
     background-color: transparent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -80,7 +80,7 @@
     
     overflow: auto;
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         width: 500px;
       
         margin: 0 auto;
@@ -111,7 +111,7 @@
     font-size: 12px;
     color:#131313;
     background-color: rgba(248, 210, 78, 0.1);
-    @include transitionM(border);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
     border: 1px solid #FCFCFC;
 
     &:focus {
@@ -121,8 +121,7 @@
     &::placeholder {
         color: #131313;
         font-size: 12px;
-
-        @include mq(tab) {
+@media screen and (min-width: 768px) {
             font-size: 14px;
         }
     }
@@ -166,7 +165,7 @@
     border-radius: 10px;
     outline: none;
     background-color: rgba(248, 210, 78, 0.1);
-    @include transitionM(border);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
     @media screen and (min-width: 768px) {
         padding: 11px 16px;
@@ -181,7 +180,7 @@
         color: #131313;
         font-size: 12px;
 
-        @include mq(tab) {
+        @media screen and (min-width: 768px) {
             font-size: 14px;
         }
     }
