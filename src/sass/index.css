@@ -25,49 +25,37 @@
 }
 
 body {
-  position: relative;
-  z-index: 10;
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.75;
   color: var(--main-txt-cl);
-}
-
-body::before {
-  content: "";
   background-position: center;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-size: contain;
   background-repeat: repeat-y;
   background-image: url("/src/images/gallery/bg_768.png");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  body::before {
+  body {
     background-image: url("/src/images/gallery/bg_480_2x.png");
   }
 }
 @media screen and (min-width: 768px) {
-  body::before {
+  body {
     background-image: url("/src/images/gallery/bg_768.png");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  body::before {
+  body {
     background-image: url("/src/images/gallery/bg_768_2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
-  body::before {
+  body {
     background-image: url("/src/images/gallery/bg_1200.png");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  body::before {
+  body {
     background-image: url("/src/images/gallery/bg_1200_2x.png");
   }
 }
@@ -152,7 +140,7 @@ img {
   font-size: 14px;
 }
 
-.chain {
+.header, .hero {
   background-color: var(--accent-bg-cl);
 }
 
