@@ -1246,9 +1246,8 @@ img {
 }
 
 .section.contacts {
-  position: relative;
   background-image: linear-gradient(transparent 373px, var(--accent-bg-cl) 373px);
-  padding: 0 15px 20px;
+  padding: 20px 0;
 }
 @media screen and (min-width: 768px) {
   .section.contacts {
@@ -1259,13 +1258,6 @@ img {
   .section.contacts {
     background-image: linear-gradient(transparent 178px, var(--accent-bg-cl) 178px);
   }
-}
-
-.contacts__container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex-direction: column;
 }
 
 .contacts__wrap {
@@ -1525,17 +1517,12 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .contacts__btn-list {
     flex-direction: row;
-    gap: 16px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__btn-list {
-    flex-direction: row;
-    gap: 16px;
   }
 }
 

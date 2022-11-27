@@ -239,9 +239,13 @@
 }
 .contacts__btn-list {
   display: flex;
+  flex-direction: column;
   gap: 16px;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) {
+ flex-direction: row;
+  }
 }
 .contacts__btn-loc {
   width: 196px;
