@@ -18,57 +18,47 @@
       </ul>
     </nav>
     <div class="header__wrap">
-      <div class="header__burger-menu">
+      <button class="header__burger-menu menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="header__icon" width="32" height="32">
           <use href="/src/images/icon.svg/symbol-defs.svg#icon-eva_menu-fill"></use>
         </svg>
+      </button>
+     
+   
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-wrap">
+     
+          <a class="header__logo" href="./index.html">
+            <picture>
+              <source srcset="/src/images/hero/logo_1200.png 1x, /src/images/hero/logo_1200_2x.png 2x" media="(min-width: 1200px)" />
+              <source srcset="/src/images/hero/logo_768.png 1x, /src/images/hero/logo_768_2x.png 2x" media="(min-width: 768px)" />
+              <source srcset="/src/images/hero/logo_480.png 1x, /src/images/hero/logo_480_2x.png 2x" media="(max-width: 767px)" />
+              <img src="/src/images/hero/logo_480.png" width="40" height="37" alt="logo">
+            </picture>
+          </a>
+          <button class="menu-toggle js-close-menu">
+          <svg class="icon icon-close" width="19" height="19">
+            <use href="/src/images/icon.svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
+        <ul class="mobile-menu">
+          <li><a href="#hero" target="_blank" class="mobile-link ">Home</a></li>
+          <li><a href="#about" target="_blank" class="mobile-link">How it’s made?</a></li>
+          <li><a href="#products" target="_blank" class="mobile-link">Our products</a></li>
+          <li><a href="#contacts" target="_blank" class="mobile-link">Contact</a></li>
+        </ul>
+        <button class="btn-buy momile-btn" type="button" data-modal-open-buy-now-mob>Buy now</button>
+      </div>
+    
+
+
       <button class="btn-buy header__btn" type="button" data-modal-open-buy-now-mob>Buy now</button>
     </div>
   </div>
 </header>
-<div class="hero">
-  <div class="container hero__container">
-    <div class="hero__wrap">
-      <h1 class="hero__title">ice cream made with passion</h1>
-      <div class="hero__counts">
-        <span class="hero__number">16</span>
-        <span class="hero__number-text">cafes</span>
-        <span class="hero__number">23</span>
-        <span class="hero__number-text">food trucks</span>
-      </div>
-    </div>
 
-    <div class="hero__btns">
-      <div class="hero__btn">
-        <a class="hero__button" href="#products">Products</a>
-      </div>
-      <a href="#about" class="hero__link">How it’s made?</a>
-    </div>
-    <picture>
-      <source srcset="/src/images/hero/desk-plate.png 1x, /src/images/hero/desk-plate-2x.png 2x"
-        media="(min-width: 1200px)" />
-      <source srcset="/src/images/hero/tablet-plate.png 1x, /src/images/hero/tablet-plate-2x.png 2x"
-        media="(min-width: 768px)" />
-      <img class="tablet-plate" src="/src/images/hero/tablet-plate.png" alt="tablet-plate">
-    </picture>
-    <div class="hero__wrapper">
-      <span class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et</span>
-      <svg class="hero__icon" width="40" height="16">
-        <use href="/src/images/icon.svg/symbol-defs.svg#icon-Arrow"></use>
-      </svg>
-    </div>
-    <picture>
-      <source srcset="/src/images/hero/desk-hero.png 1x, /src/images/hero/desk-hero-2x.png  2x" media="(min-width: 1200px)" />
-      <source srcset="/src/images/hero/tablet-hero.png 1x, /src/images/hero/tablet-hero-2x.png 2x"
-        media="(min-width: 768px)" />
-      <source srcset="/src/images/hero/mobile-hero.png 1x, /src/images/hero/mobile-hero-2x.png  2x"
-        media="(max-width: 767px)" />
-      <img class="hero__img" src="/src/images/hero/mobile-hero.png" alt="mobile-hero">
-    </picture>
-  </div>
-</div>
+
 
 
 
