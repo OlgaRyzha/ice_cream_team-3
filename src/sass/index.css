@@ -1623,15 +1623,25 @@ img {
 .location-modal-backdrop {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: initial;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 3;
   transition-property: visibility, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .location-modal {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
