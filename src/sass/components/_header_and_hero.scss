@@ -223,7 +223,9 @@ fill: var(--accent-txt-cl);
 
 .tablet-plate {
   display: none;
+  animation: tablet-plate 7s linear 0s normal infinite running ;
 
+  
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
@@ -236,6 +238,18 @@ fill: var(--accent-txt-cl);
     bottom: -8px;
     left: 128px;
   }
+}
+
+
+
+@keyframes tablet-plate {
+0% {
+  transform: translate(-50%) rotate(0);
+}
+
+100% {
+  transform: translate(-50%)  rotate(720deg);
+}
 }
 
 .hero__wrapper {
