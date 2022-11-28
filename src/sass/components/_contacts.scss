@@ -260,6 +260,7 @@
   align-items: center;
   justify-content: center;
   color: var(--accent-txt-cl);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__btn-franchise {
   width: 196px;
@@ -275,6 +276,15 @@
   justify-content: center;
   color: var(--accent-txt-cl);
   box-shadow: 0px 4px 4px 0px #00000040;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__btn-franchise:focus {
+  color: var(--main-txt-cl);
+  border: 2px solid #0A8817;
+  fill: var(--main-txt-cl);
+}
+.contacts__btn-franchise:hover {
+    border: 2px solid #0A8817;
 }
 .contacts__btn-icon {
   display: block;
