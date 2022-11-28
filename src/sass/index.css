@@ -1620,6 +1620,99 @@ img {
   pointer-events: none;
 }
 
+.location-modal-backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: initial;
+  transition-property: visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.location-modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 365px;
+  padding: 28px;
+}
+@media screen and (min-width: 768px) {
+  .location-modal {
+    width: 568px;
+    height: 458px;
+    padding: 32px 60px;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+    background-color: var(--main-txt-cl);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.location-modal__btn-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .location-modal__btn-close {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.location-modal__title {
+  color: var(--accent-txt-cl);
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .location-modal__title {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.location-modal__map {
+  display: block;
+  margin: 0 auto 24px;
+}
+@media screen and (min-width: 768px) {
+  .location-modal__map {
+    margin: 0 auto 32px;
+    display: inline-block;
+  }
+}
+
+.modal-map_btn.btn, .modal-map_btn.btn-buy, .modal-map_btn.btn-read {
+  line-height: 1.1666666667;
+  margin: 0 auto;
+  width: 134px;
+}
+@media screen and (min-width: 768px) {
+  .modal-map_btn.btn, .modal-map_btn.btn-buy, .modal-map_btn.btn-read {
+    width: 145px;
+    font-size: 14px;
+  }
+}
+
 .franchise-modal {
   position: relative;
   min-width: 280px;

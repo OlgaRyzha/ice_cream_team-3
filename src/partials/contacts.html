@@ -101,7 +101,7 @@
     </ul>
     <ul class="contacts__btn-list">
       <li>
-        <button type="button" class="contacts__btn-loc btn">
+        <button data-loc-open type="button" class="contacts__btn-loc btn">
           Our Locations<svg
             class="contacts__btn-icon"
             width="5px"
@@ -110,6 +110,27 @@
             <use href="/src/images/icon.svg/symbol-defs.svg#icon-Vector"></use>
           </svg>
         </button>
+        <div data-loc class="location-modal location-modal-backdrop is-hidden" data-loc>
+          <div class="location-modal__wrap">
+            <button data-loc-close type="button" class="location-modal__btn-close" data-loc>
+              <svg class="location-modal__icon" width="11" height="11">
+                <use href="/src/images/icon.svg/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <p class="location-modal__title">Our Locations</p>
+            <picture class="location-modal__map">
+                <source media="(min-width: 768px)" srcset="/src/images/contacts/modal-map_descktop-wp@1x.jpg 1x, /src/images/contacts/modal-map_descktop-wp@2x.jpg 2x"  type="image/webp">
+              <source media="(min-width: 768px)" srcset="/src/images/contacts/modal-map_descktop@1x.jpg 1x, /src/images/contacts/modal-map_descktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="/src/images/contacts/modal-map_mobile-wp@1x.jpg 1x, /src/images/contacts/modal-map_mobile-wp@2x.jpg 2x"  type="image/webp">
+              <source media="(max-width: 767px)" srcset="/src/images/contacts/modal-map_mobile@1x.jpg 1x, /src/images/contacts/modal-map_mobile@2x.jpg 2x"
+            />
+        <img src="/src/images/contacts/modal-map_mobile@1x.jpg" alt="map with location of Poltava" 
+        min-width="224" min-height="199"></picture>
+        <button type="button" class="modal-map_btn btn">Open map</button>
+          </div>
+        </div>
+
+
       </li>
       <li>
         <button franchise-data-modal-open class="contacts__btn-franchise" type="button">Franchise<svg class="contacts__btn-icon" width="5px" height="10px">
