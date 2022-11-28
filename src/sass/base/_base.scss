@@ -104,6 +104,7 @@ img {
   }
 
   &:focus {
+    background-color: var(--btn-bg-hv-color);
     color: #fff;
   }
 }
@@ -113,6 +114,7 @@ img {
   width: 152px;
   color: var(--btn-txt-dark-color);
   line-height: calc(17 / 14);
+
 }
 
 .btn-read {
