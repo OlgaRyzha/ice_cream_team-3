@@ -1,15 +1,18 @@
 .franchise-modal {
   position: relative;
   min-width: 280px;
+  height: auto;
   padding: 30px;
-  width: 100%;
-  height: 100vh;
   background-color: #FCFCFC;
   border-radius: var(--main-br-rd);
-
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 32px 60px;
+    height: 668px;
   }
 
 }

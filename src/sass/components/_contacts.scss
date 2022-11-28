@@ -301,12 +301,14 @@
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   z-index: 3;
-  transition: opacity var(--base-transition), visibility var(--base-transition);
+  transition-property: visibility, opacity, transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .franchise-modal-main{
   position: absolute;
   max-width: 568px;
-  width: 100%;
+  height: 668px;
   top: 50%;
   left: 50%;
   z-index: 5;
